@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebViu</title>
+    <!-- ICON CDN-->
+    <a target="_blank" href="https://icons8.com/icon/67494/close-window"></a>
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+
+    <!-- google fonts (Monteserrat) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="container nav__container">
+        <a href="/Index.html"><h4>WebViu</h4></a>
+        <ul class="nav__menu">
+          <li><a href="mainpage.html"> Home </a></li>
+          <li><a href="about.html"> About </a></li>
+          <li><a href="course.html"> Course </a></li>
+          <li><a href="screen reader.html"> WebViu Talk </a></li>
+          <img src="./image/dark eyes-30.png" id="icon">
+        </ul>
+        <!-- <img src="./image/dark eyes-30.png" id="icon" /> -->
+        <button id="open-menu-btn">
+          <i class="uil uil-list-ul"></i>
+        </button>
+        <button id="close-menu-btn">
+          <i class="uil uil-times-circle"></i>
+        </button>
+      </div>
+    </nav>
+
+    <!-- End of Nav Bar -->
+
+    <header>
+      <div class="container header__container">
+        <div class="header__left">
+          <h1>The platform for the next billion students</h1>
+          <p>
+            Transforming tech education for the next generation of developers We
+            provide a variety of services for you to learn, thrive and also have
+            fun! Free Tutorials, Millions of Articles, Live, Online and
+            Classroom Courses ,Frequent Coding Competitions ,Webinars by
+            Industry Experts, Internship opportunities and Job Opportunities.
+          </p>
+          <a href="course.html" class="btn btn-primary">Get Started</a>
+        </div>
+
+        <div class="header__right">
+          <div class="header__right-image">
+            <img src="engi.svg" alt="Buddy" />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- End Of Header  -->
+
+    <section class="categories">
+      <div class="container categories__container">
+        <div class="categories__left">
+          <h1>Categories</h1>
+          <p>
+            Learning that gets you Skills for your present (and your future).
+            Get started today.
+          </p>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+
+        <div class="categories__right">
+          <article class="category">
+            <span class="category__icon"
+              ><img src="https://img.icons8.com/dotty/45/228BE6/bitcoin.png"
+            /></span>
+            <h5>Blockchain</h5>
+            <p>
+              Innovate with the Next Frontier in Technology. Learn how the
+              blockchain is leading to a paradigm shift in decentralized
+              application programming
+            </p>
+          </article>
+          <!-- Web Dev -->
+          <article class="category">
+            <span class="category__icon"
+              ><img src="https://img.icons8.com/ios/45/228BE6/code.png"
+            /></span>
+            <h5>Web Development</h5>
+            <p>
+              The Complete Web Development Bootcamp, the only course you need to
+              learn to code and become a full-stack web developer.
+            </p>
+          </article>
+          <!-- Android Dev -->
+          <article class="category">
+            <span class="category__icon"
+              ><img
+                src="https://img.icons8.com/ios-filled/45/228BE6/android-studio--v3.png"
+            /></span>
+            <h5>Android Development</h5>
+            <p>
+              Start here if you are new to programming or new to Android
+              development. These courses show you how to build Android apps.
+            </p>
+          </article>
+          <!-- DSA  -->
+          <article class="category">
+            <span class="category__icon"
+              ><img
+                src="https://img.icons8.com/external-glyph-wichaiwi/45/228BE6/external-algorithm-technologies-disruption-glyph-wichaiwi.png"
+            /></span>
+            <h5>Data Structure & Algo</h5>
+            <p>
+              This course is part of the Data Structures and Algorithms
+              Specialization.
+            </p>
+          </article>
+          <!-- DevOps  -->
+          <article class="category">
+            <span class="category__icon"
+              ><img
+                src="https://img.icons8.com/external-outline-juicy-fish/45/228BE6/external-dev-coding-and-development-outline-outline-juicy-fish.png"
+            /></span>
+            <h5>DevOps</h5>
+            <p>
+              DevOps training program will provide you with in-depth knowledge
+              of various DevOps tools
+            </p>
+          </article>
+          <!-- Music -->
+          <article class="category">
+            <span class="category__icon"
+              ><img src="https://img.icons8.com/wired/64/228BE6/music.png"
+            /></span>
+            <h5>Music Production Specialization</h5>
+            <p>
+              Develop Your Creativity as a Music Producer.Learn the art and
+              technology of music production to create professional music
+              compositions.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- END OF CATEGORIES -->
+
+    <section class="courses">
+      <h2>Our Popular courses</h2>
+      <div class="container courses__container">
+        <article class="course">
+          <div class="course__image">
+            <img src="./image/FS web.jpg" />
+          </div>
+          <div class="course__info">
+            <h4>Full Stack Web Development</h4>
+            <p>
+              Build Complete Web and Hybrid Mobile Solutions. Master front-end
+              web, hybrid mobile app and server-side development in three
+              comprehensive courses.
+            </p>
+            <a href="course.html" class="btn btn-primary">Learn More</a>
+          </div>
+        </article>
+
+        <article class="course">
+          <div class="course__image">
+            <img src="./image/github (1).jpg" />
+          </div>
+          <div class="course__info">
+            <h4>Full Git & Github Tutorial</h4>
+            <p>
+              In this course you will learn how to use the most used version
+              control system in the Git world and collaborate in remote
+              repositories with GitHub.
+            </p>
+            <a href="course.html" class="btn btn-primary">Learn More</a>
+          </div>
+        </article>
+
+        <article class="course">
+          <div class="course__image">
+            <img src="./image/android dev.jpg " />
+          </div>
+          <div class="course__info">
+            <h4>Android Development</h4>
+            <p>
+              Launch your career as an Android app developer. Build job-ready
+              skills for an in-demand career and earn a credential from Meta. No
+              degree or prior experience required to get started.
+            </p>
+            <a href="course.html" class="btn btn-primary">Learn More</a>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-------------------- END OF COURSES------------------ -->
+
+    <section class="faqs">
+      <h2>Frequently Asked Question's</h2>
+      <div class="container faqs__container">
+        <artticle class="faq">
+          <div class="faq__icon">
+            <img
+              src="https://img.icons8.com/ios-glyphs/30/228BE6/plus--v1.png"
+            />
+          </div>
+          <div class="question__answer">
+            <h4>What do courses include?</h4>
+            <p>
+              Each course is created, owned and managed by the instructor(s).
+              The foundation of each course are its lectures, which can include
+              videos, slides, and text. In addition, instructors can add
+              resources and various types of practice activities, as a way to
+              enhance the learning experience of students.
+            </p>
+          </div>
+        </artticle>
+
+        <artticle class="faq">
+          <div class="faq__icon">
+            <img
+              src="https://img.icons8.com/ios-glyphs/30/228BE6/plus--v1.png"
+            />
+          </div>
+          <div class="question__answer">
+            <h4>How do I take a course?</h4>
+            <p>
+              Courses are entirely on-demand and they can be accessed from
+              several different devices and platforms, including a desktop,
+              laptop, and our mobile app. After you enroll in a course, you can
+              access it by clicking on the course link you will receive in your
+              confirmation email (provided you’re logged into your Udemy
+              account). You can also begin the course by logging in and
+              navigating to your My learning page.
+            </p>
+          </div>
+        </artticle>
+
+        <artticle class="faq">
+          <div class="faq__icon">
+            <img
+              src="https://img.icons8.com/ios-glyphs/30/228BE6/plus--v1.png"
+            />
+          </div>
+          <div class="question__answer">
+            <h4>Is there any way to preview a course?</h4>
+            <p>
+              Yes! Learn how to preview a course, and review key information
+              about it. This article outlines how you can search Udemy’s
+              ever-growing library, and find courses you’re interested in
+              taking.
+            </p>
+          </div>
+        </artticle>
+
+        <artticle class="faq">
+          <div class="faq__icon">
+            <img
+              src="https://img.icons8.com/ios-glyphs/30/228BE6/plus--v1.png"
+            />
+          </div>
+          <div class="question__answer">
+            <h4>How can I pay for a course?</h4>
+            <p>
+              It's supports several different payment methods, depending on your
+              account country and location.
+            </p>
+          </div>
+        </artticle>
+
+        <artticle class="faq">
+          <div class="faq__icon">
+            <img
+              src="https://img.icons8.com/ios-glyphs/30/228BE6/plus--v1.png"
+            />
+          </div>
+          <div class="question__answer">
+            <h4>What if I don’t like a course I purchased?</h4>
+            <p>
+              We want you to be satisfied, so all eligible courses purchased on
+              Udemy can be refunded within 30 days. If you are unhappy with a
+              course, you can request a refund, provided the request meets the
+              guidelines in our refund policy.
+            </p>
+          </div>
+        </artticle>
+
+        <artticle class="faq">
+          <div class="faq__icon">
+            <img
+              src="https://img.icons8.com/ios-glyphs/30/228BE6/plus--v1.png"
+            />
+          </div>
+          <div class="question__answer">
+            <h4>Where can I go for help?</h4>
+            <p>
+              If you find you have a question about a paid course while you’re
+              taking it, you can search for answers to your question in the Q&A
+              or ask the instructor. Our Help Center has extensive information
+              regarding Udemy’s various features, and articles with
+              troubleshooting steps to help you quickly resolve any issues you
+              encounter. Our support team is also happy to help.
+            </p>
+          </div>
+        </artticle>
+      </div>
+    </section>
+
+    <!------------- END OF FAQ's ------------->
+
+    <footer>
+      <div class="container footer__container">
+        <div class="footer__1">
+          <a href="Index.html" class="footer__logo"><h4>WebViu</h4></a>
+          <p>We provide the tools and skills to teach what you love.</p>
+        </div>
+
+        <div class="footer__2">
+          <h4>Contact Us</h4>
+          <div>
+            <p>+91 90909090</p>
+            <p>team_techify@hotmail.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <small>Copyright &copy; Team Techify👨‍💻❤️ </small>
+      </div>
+    </footer>
+
+    <script src="./main.js"></script>
+
+    <!-- <script>
+      var icon = document.getElementById("icon");
+      icon.onclick = function () {
+        document.body.classList.toggle("dark-theme");
+      }; -->
+    </script>
+  </body>
+</html>

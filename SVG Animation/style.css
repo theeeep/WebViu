@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 5%;
+  background-image: linear-gradient(rgba(0, 8, 51, 0.9), rgba(0, 8, 51, 0.9)),
+    url(/image/pexels-mitchell-luo-3707669.jpg);
+  background-position: center;
+  background-size: cover;
+  background-color: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-bar {
+  width: 100%;
+  max-width: 700px;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  border-radius: 60px;
+  padding: 10px 20px;
+  backdrop-filter: blur(2px) saturate(180%);
+}
+
+.search-bar input {
+  background: transparent;
+  flex: 1;
+  border: 0;
+  outline: none;
+  padding: 24px 20px;
+  font-size: 20px;
+  color: #cac7ff;
+}
+::placeholder {
+  color: #cac7ff;
+}
+.search-bar button img {
+  width: 50px;
+}
+
+.search-bar button {
+  border: 0;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  background: #58629b;
+  cursor: pointer;
+}
+
+/* End Of Search Bar */
+
+svg {
+  font-size: 200px;
+  padding-top: 5%;
+}
+.copy {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 3px;
+  stroke-dasharray: 8% 30%;
+  stroke-dashoffset: 0%;
+  animation: textanimation 6s linear infinite;
+}
+
+@keyframes textanimation {
+  100% {
+    stroke-dashoffset: -35%;
+  }
+}
+
+.copy1 {
+  stroke: #673ab7;
+  animation-delay: -1s;
+}
+.copy2 {
+  stroke: #e91e63;
+  animation-delay: -2s;
+}
+.copy3 {
+  stroke: #ff5722;
+  animation-delay: -3s;
+}
+.copy4 {
+  stroke: #f44336;
+  animation-delay: -4s;
+}
+.copy5 {
+  stroke: #ffc107;
+  animation-delay: -5s;
+}

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Web Screen Reader</title>
+    <meta charset="UTF-8" />
+    <meta name="fragment" content="!" />
+    <meta
+      name="description"
+      content="A  Web Screen Reader that improves a site's accessibility for the blind or the visually impaired.'"
+    />
+    <meta
+      name="keywords"
+      content="Screen Reader, Accessibility, Blind, Visually Impaired, Free, Web"
+    />
+    <meta name="viewport" content="width=device-width" />
+
+    <link rel="stylesheet" href="./browser/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
+    <style>
+      body {
+        text-align: center;
+        /* color: black; */
+        /* background-color: aqua; */
+      }
+      .jumbotron {
+        margin-bottom: 0;
+        padding-right: 15px;
+        padding-left: 15px;
+      }
+      #free {
+        position: absolute;
+        top: 15px;
+        left: -25px;
+        padding: 2px 25px;
+        background: pink;
+        transform: rotate(-45deg);
+        display: block;
+        line-height: initial;
+        font-size: 16px;
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 1px 5px 1px rgba(0, 0, 0, 0.3);
+      }
+      .form-control {
+        max-width: 300px;
+        margin: auto;
+      }
+      .form-control[type="checkbox"] {
+        display: inline-block;
+        width: auto;
+      }
+      .form-control[type="checkbox"]:not(:focus) {
+        box-shadow: none;
+      }
+      #reveal-checked:not(:checked) ~ * {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="jumbotron">
+      <svg viewBox="0 0 1000 400">
+        <text id="mytext" x="50%" y="50%" text-anchor="middle" fill="none">
+          <a href="DE Project/mainpage.html" target="_blank">WebViu</a>
+        </text>
+        <use xlink:href="#mytext" class="copy copy1"></use>
+        <use xlink:href="#mytext" class="copy copy2"></use>
+        <use xlink:href="#mytext" class="copy copy3"></use>
+        <use xlink:href="#mytext" class="copy copy4"></use>
+        <use xlink:href="#mytext" class="copy copy5"></use>
+      </svg>
+      <h1>WebViu Screen Reader</h1>
+      <h3>
+        A screen reader for the web to improve accessibility.<br />Now even the
+        blind and the visually impaired can access everything.
+      </h3>
+      <!-- <sup id="free">It's free!</sup> -->
+
+      <br />
+      <hr />
+      <br />
+
+      <div>
+        <h2>1. Simply <u>hover</u> me to read me out loud</h2>
+        <h2>
+          <a href="/not-a-real-url-haha" target="_blank"
+            >2. I will let you know what type I am</a
+          >
+        </h2>
+
+        <h2>
+          <input
+            class="form-control"
+            placeholder="Another way to read content is to use Tab"
+            autofocus
+          />
+        </h2>
+        <h2>
+          <input
+            class="form-control"
+            type="email"
+            value="You'll know the current value"
+          />
+        </h2>
+
+        <h3>
+          <select class="form-control">
+            <option value="">Handles selects</option>
+            <option value="1">The first option</option>
+            <option value="2">The second option which is much better</option>
+          </select>
+        </h3>
+
+        <h3 class="form-inline">
+          <input
+            type="checkbox"
+            name="Checkboxes are sometimes checked and sometimes not"
+            class="form-control"
+            id="reveal-checked"
+          />
+          <div>
+            <label for="reveal-checked"
+              >Things that are hidden will not be read</label
+            >
+          </div>
+        </h3>
+      </div>
+
+      <br />
+      <hr />
+      <br />
+
+      <div>
+        <h3>
+          <button id="raise" class="btn btn-info">
+            It will notify you when changes occur
+          </button>
+          <h4 id="numb">New value is: 0</h4>
+          <script>
+            let raise = document.getElementById("raise");
+            let numb;
+            raise.onclick = () => {
+              numb = numb || document.getElementById("numb");
+              let oldText = numb.innerText;
+              numb.innerText =
+                oldText.slice(0, oldText.length - 1) +
+                (+oldText.slice(oldText.length - 1) + 1);
+            };
+          </script>
+        </h3>
+
+        <h3>
+          <input
+            id="toggle"
+            type="button"
+            value="You will know when new content appears"
+            class="btn btn-success"
+          />
+          <script id="self-script">
+            let toggle = document.getElementById("toggle");
+            let selfScript;
+            toggle.onclick = () => {
+              let newElement = document.createElement("h5");
+              newElement.innerText = "New content inserted!";
+              selfScript = selfScript || document.getElementById("self-script");
+              toggle.parentElement.insertBefore(newElement, selfScript);
+              setTimeout(() => newElement.remove(), 2000); // cleanup
+            };
+          </script>
+        </h3>
+      </div>
+
+      <br />
+      <hr />
+      <br />
+
+      <!-- <div>
+                <h2>So how do I start?</h2>
+                <h3>1. Star me on <a href="https://github.com/Tzook/web-screen-reader" aria-label="Tzook's GitHub link with the Web Screen Reader code">GitHub</a> - to get me motivation to continue working on it</h3>
+                <h3>2. Tell me your ideas to improve this. Email: <a href="mailto:tzook10@gmail.com">tzook10@gmail.com</a>
+                <h3>3. Be patient! It's still under construction and will soon be ready for use</h3>
+            </div> -->
+    </main>
+
+    <script src="./browser/system.js"></script>
+    <script src="./bundle.js"></script>
+    <script>
+      System.load("Main");
+    </script>
+    <!-- <footer>
+      <div class="container footer__container">
+        <div class="footer__1">
+          <a href="Index.html" class="footer__logo">
+            <h4>WebViu</h4>
+          </a>
+          <p>We provide the tools and skills to teach what you love.</p>
+        </div>
+
+        <div class="footer__2">
+          <h4>Contact Us</h4>
+          <div>
+            <p>+91 90909090</p>
+            <p>team_techify@hotmail.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <small>Copyright &copy; Team Techify👨‍💻❤️ </small>
+      </div>
+    </footer> -->
+  </body>
+</html>
